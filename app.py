@@ -289,9 +289,9 @@ else:
         return "color: #94a3b8"
 
     styled = display_df.style\
-        ..map(color_direction, subset=["Direction"])\
-        ..map(color_score, subset=["Score"])\
-        ..map(color_rsi, subset=["RSI"])\
+        .map(color_direction, subset=["Direction"])\
+        .map(color_score, subset=["Score"])\
+        .map(color_rsi, subset=["RSI"])\
         .format({
             "Prix": "{:.2f}",
             "Variation %": "{:+.2f}%",
